@@ -1,0 +1,346 @@
+:root {
+    --bg: black;
+    --white: white;
+    --green: rgb(9, 147, 9);
+}
+
+body {
+    background-color: var(--bg);
+    color: var(--white);
+}
+menu, menu ul{
+   padding: 0px;
+}
+menu li {
+    list-style: none;
+}
+
+menu a {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    color: var(--white);
+    font-weight: 600;
+    font-size: 1.7rem;
+}
+
+#logo {
+   position: absolute;
+    top: 0px;
+    font-size: 1rem;
+    left: 10px;
+}
+
+.separator {
+    width: 100%;
+    border-top: 1px solid var(--white);
+}
+
+#services {
+    font-family: cursive;
+    -webkit-text-stroke: 1px var(--white);
+    text-shadow: 0px 0px 9px var(--green);
+    font-size: 3rem;
+    text-align: center;
+    font-weight: bolder;
+    letter-spacing: 0.2rem;
+    color: rgba(0, 0, 0, 0);
+}
+
+.categories {
+    margin-bottom: 10px;
+}
+
+.categories li {
+    list-style: none;
+    border: 1px solid var(--white);
+    border-radius: 10px;
+    width: 250px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.categories a {
+    text-decoration: none;
+    color: var(--white);
+}
+
+.categories ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+    font-size: 1rem;
+}
+
+.servicetitle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    font-size: 1.2rem;
+    color: var(--white);
+    height: 80px;
+    margin: 20px;
+    padding: 10px;
+    border-radius: 20px;
+    border: 1px solid var(--white);
+    box-shadow: 0px 0px 60px var(--green);
+}
+
+
+.servicetitle i {
+    -webkit-text-fill-color: rgb(48, 105, 152);
+    -webkit-text-stroke: 0.03rem rgb(255, 212, 59);
+    font-size: 2rem;
+}
+
+.servicetitle:hover {
+    transition: 1s ease-in-out;
+    border: 4px solid var(--white);
+}
+
+.pythonsection {
+    height: 300px;
+    border: 1px solid var(--white);
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    margin: 20px;
+    padding: 20px;
+}
+
+.sectiontitle h3 {
+    text-align: center;
+    padding: 0px;
+}
+
+.sectiontitle {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 50%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 0.8rem;
+    text-align: justify;
+}
+
+.sectiontitle p {
+    text-overflow: ellipsis;
+
+}
+
+iframe {
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    box-shadow: 0px 0px 60px var(--green);
+    height: 100%;
+    width: 50%;
+}
+
+.pythonsection:hover {
+    transition: 0.5s;
+    transform: scale(1.029);
+    border: 2px solid var(--white);
+    background-image: linear-gradient(rgba(43, 96, 50, 0.944), rgba(12, 56, 18, 0.944), rgba(6, 59, 13, 0.784), rgb(0, 7, 1));
+}
+
+.py {
+    display: flex;
+}
+
+aside {
+    width: 20%;
+    height: 400px;
+    box-shadow: 0px 0px 60px var(--green);
+    color: var(--white);
+    padding: 20px;
+    border: 1px solid var(--white);
+    border-radius: 20px;
+    margin: 20px;
+    overflow: scroll;
+    position: relative;
+}
+
+.searchbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 5px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    background-color: rgba(0, 128, 0, 0.403);
+    box-shadow: 0px 0px 60px var(--green);
+
+}
+
+.asideuppsersection {
+    background-color: var(--bg);
+    position: sticky;
+    top: 10px;
+    padding-bottom: 10px;
+}
+
+.searchbar i {
+    font-size: 1.2rem;
+}
+
+.searchbar input[type="text"] {
+    width: 80%;
+    height: 1.6rem;
+    border-radius: 6px;
+    border: 1px solid var(--green);
+
+}
+
+.searchbar input[type="text"]::placeholder {
+    font-style: italic;
+    color: var(--green);
+}
+
+aside ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 23px;
+}
+
+aside a {
+    color: var(--white);
+    text-decoration: none;
+}
+
+aside li {
+    list-style-type: decimal;
+}
+
+aside a:hover {
+    text-decoration: underline;
+    text-decoration-color: var(--green);
+}
+
+
+.pythoncontent {
+    flex: 1;
+}
+
+.cardsection {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px;
+}
+
+.card {
+    width: 30%;
+    padding: 20px;
+    height: 20%;
+    border: 1px solid var(--white);
+    border-radius: 20px;
+}
+
+.card iframe {
+    width: 100%;
+    border-radius: 20px;
+}
+a {
+    transition: 0.5s;
+}
+
+@media screen and (max-width: 900px) {
+aside{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 10px;
+    height: 300px;
+    flex: 1;
+}
+aside ul{
+    padding: 10px;
+}
+aside li{
+    margin: 0px;
+    padding: 6px;
+}
+
+.searchbar{
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: center;
+    align-items: center;
+    margin-top: 0px;
+}
+    .Illustrator {
+        margin: 20px;
+    }
+
+    .servicetitle {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 0.6rem;
+        flex: 1;
+        height: 3rem;
+        width: 100%;
+        margin: 0px;
+        padding: 10px;
+        border-radius: 20px;
+        border: 1px solid var(--white);
+        box-shadow: 0px 0px 60px var(--green);
+        color: var(--white);
+
+    }
+
+
+    .servicetitle i {
+        background-color: linear-gradient(rgba(20, 201, 237, 0.8), rgba(102, 198, 217, 0.8));
+    }
+
+    .servicetitle:hover {
+        transition: 1s ease-in;
+        transform: scale(1.009);
+        border: 1px solid var(--white);
+    }
+
+    .sectiontitle h3 {
+        margin: 0px;
+    }
+
+    .sectiontitle p {
+        font-size: 0.6rem;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+
+    }
+
+    .pythonsection {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 150px;
+        margin: 0px;
+        margin-top: 20px;
+    }
+
+
+    .pythonsection iframe {
+        width: 100%;
+        height: 80%;
+        border: 1px solid var(--white);
+    }
+}
